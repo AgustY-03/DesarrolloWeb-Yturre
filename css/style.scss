@@ -92,7 +92,7 @@ article{
     margin-top: 20px;
     margin-bottom:30px;
     font-size: 20px;
-    width: 80%;
+    width: 85%;
 }
 
 .separacion{
@@ -356,24 +356,21 @@ h3{
     margin-bottom: 30px;
 }
 
-.carrucel{
-    & ul{
-        & li{
-            display: inline-block;
-            list-style: none;
+article{
+    & .articulo_juegos__contenedor{
+        & .container-fluid{
+            .container-fluid{
+                padding-right: 0px;
+                padding-left: 0px;
+            }
         }
     }
 }
 
-.imagenext{
-    position: static;
-    width: 20%;
-    height: auto;
-    margin-left: 60px;   
-}
-
-article{
-    & .container-fluid{
+section{
+    & .col-12{
+        margin-left: 0px;
+        padding-right: 0px;
         padding-left: 0px;
     }
 }
@@ -381,7 +378,7 @@ article{
 .titles{
     padding-top: 3px;
     width: 100%;
-    margin-left: 33px;
+    margin-left: 0px;
     text-align: center;
 
     & a{
@@ -399,8 +396,8 @@ article{
 
 .semititle{
     padding: 5px;
-    width: 62%;
-    margin-left: 39px;
+    width: 100%;
+    margin-left: 0px;
     background-color: red;
     color: white;
     border-radius: 10px;
@@ -410,64 +407,19 @@ article{
 
 // Contacto - Reporte //
 
-.contenedor{
-    margin-top: 110px;
-    position: static;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-
-.centrado{
-    position: absolute;
-    top: 33%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 100px;
-    width: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 .contacto{
     background-color: lightgray;
-    height: 115vh;
+    height: 92.5vh;
     width: 100%;
 }
 
-.datos{
-    padding-top: 50px;
-    margin-left: 43%;
-    font-weight: bold;
-    font-size: 14px;
-    clear: both;
-    width: 100px;
-    margin-right: 10px;
-    font-family: 'Arial';
+main .card{
+    top: 25%;
+    left: 35%;
 }
 
-.datos{
-    & input{
-        margin-bottom: 14px;
-    }
-}
-
-.requerimiento{
-    max-width: 420px;
-    font-size: 16px;
-    font-family: 'arial';
-    margin: 0 auto;
-    margin-top: 27px;
-}
-
-.contacto{
-    & p{
-        font-size: 15px;
-        color: gray;
-        width: 100%;
-        height: 2vh;
-        text-align: center;
-    }
+.mb-4{
+    background-color: white;
 }
 
 .comingsoon{
@@ -707,19 +659,17 @@ article{
 
     /* Reporte/Contacto */
 
+    .contacto{
+        height: 100vh;
+    }
+
     .contenedor{
         width: 100%;
     }
 
-    .centrado{
-        width: 80%;
-        font-size: 50px;
-        top: 190px;
-        left: 50%;
-    }
-
-    .datos{
-        margin-left: calc(100% - 90%);
+    main .card{
+        top: 20%;
+        left: 0%;
     }
 
     /* Noticias */
@@ -750,8 +700,17 @@ article{
 
     .articulo_juegos__contenedor{
         width: 100%;
+        height: auto;
     }
 
+    .titles{
+        margin-left: 0px;
+    }
+
+    .semititle{
+        width: 100%;
+        margin-left: 0px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -898,8 +857,17 @@ article{
 
     /* Reporte/Contacto */
 
+    .contacto{
+        height: 100vh;
+    }
+
     .contenedor{
         width: 100%;
+    }
+
+    main .card{
+    top: 20%;
+    left: 25%;
     }
 
     /* Noticias */
@@ -907,6 +875,13 @@ article{
     .noticias__contenedor{
         width: 100%;
         height: 1440px;
+    }
+
+    // juegos //
+
+    .articulo_juegos__contenedor{
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -1022,6 +997,28 @@ article{
     .noticias__contenedor{
         width: 100%;
     }
+
+    // contacto-reporte //
+
+    .contacto{
+        height: 91.5vh;
+    }
+
+    main .card{
+        top: 20%;
+    }
+
+    // juegos //
+
+    .articulo_juegos__contenedor{
+        width: 100%;
+        height: auto;
+    }
+
+    .semititle{
+        width: 100%;
+        margin-left: 0px;
+    }
 }
 
 @media only screen and (min-width: 1144px) and (max-width:1911px){
@@ -1075,3 +1072,4 @@ article{
         background-position: center;
     }
 }
+
