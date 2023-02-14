@@ -74,6 +74,7 @@ article {
   overflow: auto;
   margin: 0 auto;
   padding-left: 40px;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 .articulo__contenedor ul li {
   list-style: none;
@@ -289,6 +290,7 @@ footer {
   background-position: center;
   overflow: auto;
   margin: 0 auto;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 .articulo_jg__contenedor p {
   padding-left: 50px;
@@ -336,6 +338,11 @@ iframe {
   background-position: center;
   overflow: auto;
   margin: 0 auto;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.sombra {
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 h3 {
@@ -385,6 +392,45 @@ section .col-12 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.info-juegos {
+  background-color: beige;
+  width: 100%;
+  height: 100vh;
+  padding-top: 90px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 0px;
+}
+
+.jumbotron {
+  margin-bottom: 0rem;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+div .col-12 {
+  padding-right: 0px;
+}
+
+.detalle {
+  font-size: 30px;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.plat {
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  font-size: small;
+  margin-left: 7px;
+  font-family: "Courier New", Courier, monospace;
+}
+
 .contacto {
   background-color: lightgray;
   height: 92.5vh;
@@ -429,6 +475,7 @@ main .card {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .textos {
@@ -478,6 +525,83 @@ main .card {
   background-color: rgba(0, 0, 0, 0.329);
   position: absolute;
   z-index: 1;
+}
+
+.noti {
+  background-color: antiquewhite;
+  width: 100%;
+  height: auto;
+  padding-left: 390px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.noti__contenedor {
+  background-color: white;
+  width: 1140px;
+  height: auto;
+  padding-bottom: 50px;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.title-noti {
+  text-align: center;
+  color: #343537;
+  line-height: 3rem;
+  padding-top: 1rem;
+  max-width: 100%;
+}
+
+.subtitle-noti {
+  color: #343537;
+  font: normal 18px "arial";
+  padding: 0.4rem 0 1rem 0;
+  text-align: center;
+}
+
+.cabezal-noti {
+  position: static;
+  width: 100%;
+  padding-left: 90px;
+  padding-right: 90px;
+  margin-bottom: 20px;
+}
+
+.semititle-noti {
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.semititle-noti:after {
+  border-bottom: 1px solid #C51111;
+  content: "";
+  display: block;
+  position: relative;
+  width: auto;
+}
+
+.text-noti {
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+}
+
+.tweet-noti {
+  width: 100%;
+  position: static;
+  padding-top: 30px;
+  padding-left: 269.5px;
+  padding-right: 269.5px;
+  margin-bottom: 20px;
+}
+
+.post-noti {
+  position: static;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -620,11 +744,52 @@ main .card {
   }
   .noticias__contenedor {
     width: 100%;
-    height: 2550px;
+    height: auto;
   }
   .filas {
     display: flex;
     flex-wrap: wrap;
+  }
+  .noti {
+    padding-top: 50px;
+    padding-left: 0px;
+  }
+  .noti__contenedor {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    box-shadow: none;
+  }
+  .title-noti {
+    font-size: 35px;
+  }
+  .cabezal-noti {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .post-noti {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .semititle-noti {
+    padding-left: 30px;
+    padding-right: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .tweet-noti {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .text-noti {
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .semititle-noti {
+    font-size: 20px;
   }
   /* Juegos */
   .articulo_juegos {
@@ -642,6 +807,31 @@ main .card {
   .semititle {
     width: 100%;
     margin-left: 0px;
+  }
+  .info-juegos {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: auto;
+  }
+  div .jumbotron {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .jumbotron {
+    box-shadow: none;
+  }
+  .display-4 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .plat {
+    padding: 3px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -774,6 +964,61 @@ main .card {
     width: 100%;
     height: auto;
   }
+  .noti {
+    padding-top: 140px;
+    padding-left: 0px;
+  }
+  .noti__contenedor {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    box-shadow: none;
+  }
+  .title-noti {
+    font-size: 35px;
+  }
+  .cabezal-noti {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .post-noti {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .semititle-noti {
+    padding-left: 40px;
+    padding-right: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .tweet-noti {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .text-noti {
+    font-size: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .semititle-noti {
+    font-size: 30px;
+  }
+  .info-juegos {
+    padding-top: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    height: auto;
+  }
+  .display-4 {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .plat {
+    padding: 5px;
+  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1143px) {
   .navbar {
@@ -864,6 +1109,35 @@ main .card {
   /* Noticias */
   .noticias__contenedor {
     width: 100%;
+    height: 1600px;
+  }
+  .noti {
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .noti__contenedor {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    box-shadow: none;
+  }
+  .cabezal-noti {
+    margin-left: 0px;
+    padding-right: 60px;
+    padding-left: 60px;
+    width: 100%;
+  }
+  .post-noti {
+    margin-left: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+  }
+  .tweet-noti {
+    padding-left: 150px;
+    padding-right: 150px;
   }
   .contacto {
     height: 91.5vh;
@@ -878,6 +1152,21 @@ main .card {
   .semititle {
     width: 100%;
     margin-left: 0px;
+  }
+  .info-juegos {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 900px;
+  }
+  .display-4 {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1, 75rem;
+  }
+  .plat {
+    padding: 5px;
   }
 }
 @media only screen and (min-width: 1144px) and (max-width: 1911px) {
@@ -919,5 +1208,50 @@ main .card {
   .articulo_ulof {
     background-size: cover;
     background-position: center;
+  }
+  .info-juegos {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 800px;
+  }
+  .display-4 {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1, 5rem;
+  }
+  .plat {
+    padding: 5px;
+  }
+  .noti {
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .noti__contenedor {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    box-shadow: none;
+  }
+  .cabezal-noti {
+    margin-left: 0px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .post-noti {
+    margin-left: 0px;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .tweet-noti {
+    padding-left: 300px;
+    padding-right: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
