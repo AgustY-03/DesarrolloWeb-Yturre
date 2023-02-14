@@ -321,6 +321,10 @@ iframe {
   padding-bottom: 30px;
 }
 
+.padding-img {
+  padding-right: 60px;
+}
+
 .articulo_juegos {
   height: auto;
   width: 100%;
