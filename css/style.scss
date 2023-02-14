@@ -517,6 +517,7 @@ main .card{
     text-decoration: none;
     position: static;
     color: black;
+    margin-bottom: 10px;
 }
 
 .col-9, .col-3, .col-12, .col-4, .col-2, .col-8{
@@ -644,6 +645,141 @@ main .card{
     margin-bottom: 20px;
 }
 
+// E-Sport //
+
+.e-sport{
+    @extend .noticias;
+    background-image: url(../img/fondo/esports-fondo.jpg);
+    width: 100%
+}
+
+.esports__contenedor{
+    @extend .noticias__contenedor;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 1400px;
+}
+
+.titulo-sports{
+    @extend .semititle-noti;
+    padding-top: 20px;
+    color: rgb(82, 79, 79);
+    padding-left: 20px;
+}
+
+.semititle-sports{
+    @extend .semititle-noti;
+    color: rgb(82, 79, 79);
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+article{
+    & section{
+        .col-xs-12, .col-sm-12, .col-md-3, .col-lg-3{
+            padding-left: 10px;
+            padding-right: 0px;
+        }
+    }
+}
+
+.portada{
+    max-height: 495px;
+    width: 100%;
+}
+
+.cabezal-esport{
+    padding-top: 10px;
+}
+
+.content{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 10px;
+}
+
+.minicontent{
+    & h3{
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 5px;
+
+    margin-left: 0px;
+    margin-bottom: 0px;
+    }
+}
+
+.col{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.row{
+
+    padding-right: 0px;
+}
+
+.col-lg-3, .col-md-5, .col-sm-12{
+    width: 100%;
+    max-width: none;
+}
+
+// sport //
+
+.sport{
+    @extend .noti;
+}
+
+.sport__contenedor{
+    @extend .noti__contenedor;
+}
+
+.text-sport{
+    @extend .text-noti;
+}
+
+.title-sport{
+    @extend .title-noti;
+}
+
+.subtitle-sport{
+    @extend .subtitle-noti;
+}
+
+.cabezal-sport{
+    @extend .cabezal-noti;
+}
+
+.semititle-sport{
+    @extend .semititle-noti;
+}
+
+.semititle-sport:after {
+    border-bottom: 1px solid #C51111;
+    content: "";
+    display: block;
+    position: relative;
+    width: auto;
+}
+
+.tweet-sport{
+    @extend .tweet-noti;
+}
+
+.post-sport{
+    @extend .post-noti;
+}
+
+
+@mixin background{
+    background-size: cover;
+    background-position: center;
+}
 
 // Media // 
 
@@ -672,7 +808,7 @@ main .card{
 
     .articulo{
         background-image: none;
-        padding-top: 70px;
+        padding-top: 60px;
         padding-bottom: 25px;
     }
 
@@ -835,6 +971,7 @@ main .card{
     .noti{
         padding-top: 50px;
         padding-left: 0px;
+        padding-bottom: 0px;
     }
 
     .noti__contenedor{
@@ -939,6 +1076,32 @@ main .card{
     .plat{
         padding: 3px;
     }
+
+    // E-Sports //
+
+    .esports__contenedor{
+        height: 2300px;
+    }
+
+    .col-lg-3, .col-md-5, .col-sm-12{
+        width: 100%;
+        max-width: none;
+    }
+
+    .content{
+        padding: 0px;
+
+        & h3{
+            font-size: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+
+    .semititle-sports{
+        padding-left: 0px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -951,10 +1114,9 @@ main .card{
         margin-left: auto;
     }
 
-    .articulo{
+    .articulo, .articulo_mh, .articulo_baa, .articulo_twd, .articulo_elr, .articulo_sfv, .articulo_cuphead, .articulo_mw2, .articulo_ulof{
         width: 100%;
-        background-size: cover;
-        background-position: center;
+        @include background;
     }
 
 
@@ -1006,54 +1168,6 @@ main .card{
             margin: 0 auto;
             margin-left: 0px;
         }
-    }
-
-    .articulo_mh{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_baa{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_twd{
-        width: 100%;
-        background-size: cover;
-        background-position: center;;
-    }
-
-    .articulo_elr{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_sfv{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_cuphead{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_mw2{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_ulof{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
     }
 
     .articulo_jg__contenedor{
@@ -1185,6 +1299,33 @@ main .card{
     .plat{
         padding: 5px;
     }
+
+    // E-Sports //
+
+    .col-lg-3, .col-md-5, .col-sm-12{
+        width: 100%;
+        max-width: none;
+    }
+
+    .esports__contenedor{
+        height: 1320px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .portada{
+        min-height: 495px;
+    }
+
+    .minicontent{
+        & h3{
+            font-size: 15px;
+        }
+    }
+
+    .semititle-sports{
+        padding-left: 0px;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width:1143px){
@@ -1197,10 +1338,9 @@ main .card{
         margin-left: auto;
     }
 
-    .articulo{
+    .articulo, .articulo_mh, .articulo_baa, .articulo_twd, .articulo_elr, .articulo_sfv, .articulo_cuphead, .articulo_mw2, .articulo_ulof{
         width: 100%;
-        background-size: cover;
-        background-position: center;
+        @include background;
     }
 
     .articulo__contenedor{
@@ -1211,53 +1351,6 @@ main .card{
         margin-top: 15px;
         padding-left: 25px;
         padding-right: 25px;
-    }
-
-    .articulo_mh{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_baa{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .articulo_twd{
-        width: 100%;
-        background-size: cover;
-        background-position: center;;
-    }
-
-    .articulo_elr{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_sfv{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_cuphead{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_mw2{
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_ulof{
-        background-size: cover;
-        background-position: center;
     }
 
     .articulo_jg__contenedor{
@@ -1380,6 +1473,17 @@ main .card{
     .plat{
         padding: 5px;
     }
+
+    // E-Sports //
+
+    .esports__contenedor{
+        height: 1350px;
+    }
+
+    .col-lg-3, .col-md-5, .col-sm-12{
+        width: 100%;
+        max-width: none;
+    }
 }
 
 @media only screen and (min-width: 1144px) and (max-width:1911px){
@@ -1388,49 +1492,8 @@ main .card{
         margin-left: auto;
     }
 
-    .articulo{
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_mh{
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_baa{
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_twd{
-        background-size: cover;
-        background-position: center;;
-    }
-
-    .articulo_elr{
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_sfv{
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_cuphead{
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_mw2{
-        background-size: cover;
-        background-position: center;
-    }
-
-    .articulo_ulof{
-        background-size: cover;
-        background-position: center;
+    .articulo, .articulo_mh, .articulo_baa, .articulo_twd, .articulo_elr, .articulo_sfv, .articulo_cuphead, .articulo_mw2, .articulo_ulof{
+        @include background;
     }
 
     // info - juegos //
@@ -1492,5 +1555,11 @@ main .card{
         padding-left: 300px;
         padding-right: 300px;
     }
-}
 
+    // E-Sports //
+
+    .col-lg-3, .col-md-5, .col-sm-12{
+        width: 100%;
+        max-width: none;
+    }
+}

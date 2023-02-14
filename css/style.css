@@ -454,7 +454,7 @@ main .card {
   width: auto;
 }
 
-.noticias {
+.noticias, .e-sport {
   background-image: url(../img/fondo/noticias-fondo.jpg);
   background-size: cover;
   background-position: center;
@@ -465,7 +465,7 @@ main .card {
   padding-bottom: 100px;
 }
 
-.noticias__contenedor {
+.noticias__contenedor, .esports__contenedor {
   position: relative;
   height: 1670px;
   width: 1140px;
@@ -483,6 +483,7 @@ main .card {
   text-decoration: none;
   position: static;
   color: black;
+  margin-bottom: 10px;
 }
 
 .col-9, .col-3, .col-12, .col-4, .col-2, .col-8 {
@@ -527,7 +528,7 @@ main .card {
   z-index: 1;
 }
 
-.noti {
+.noti, .sport {
   background-color: antiquewhite;
   width: 100%;
   height: auto;
@@ -536,7 +537,7 @@ main .card {
   padding-bottom: 100px;
 }
 
-.noti__contenedor {
+.noti__contenedor, .sport__contenedor {
   background-color: white;
   width: 1140px;
   height: auto;
@@ -544,7 +545,7 @@ main .card {
   box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-.title-noti {
+.title-noti, .title-sport {
   text-align: center;
   color: #343537;
   line-height: 3rem;
@@ -552,14 +553,14 @@ main .card {
   max-width: 100%;
 }
 
-.subtitle-noti {
+.subtitle-noti, .subtitle-sport {
   color: #343537;
   font: normal 18px "arial";
   padding: 0.4rem 0 1rem 0;
   text-align: center;
 }
 
-.cabezal-noti {
+.cabezal-noti, .cabezal-sport {
   position: static;
   width: 100%;
   padding-left: 90px;
@@ -567,13 +568,13 @@ main .card {
   margin-bottom: 20px;
 }
 
-.semititle-noti {
+.semititle-noti, .semititle-sport, .semititle-sports, .titulo-sports {
   padding-left: 60px;
   padding-right: 60px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.semititle-noti:after {
+.semititle-noti:after, .semititle-sport:after, .semititle-sports:after, .titulo-sports:after {
   border-bottom: 1px solid #C51111;
   content: "";
   display: block;
@@ -581,13 +582,13 @@ main .card {
   width: auto;
 }
 
-.text-noti {
+.text-noti, .text-sport {
   padding-left: 60px;
   padding-right: 60px;
   text-align: center;
 }
 
-.tweet-noti {
+.tweet-noti, .tweet-sport {
   width: 100%;
   position: static;
   padding-top: 30px;
@@ -596,12 +597,90 @@ main .card {
   margin-bottom: 20px;
 }
 
-.post-noti {
+.post-noti, .post-sport {
   position: static;
   width: 100%;
   padding-left: 100px;
   padding-right: 100px;
   margin-bottom: 20px;
+}
+
+.e-sport {
+  background-image: url(../img/fondo/esports-fondo.jpg);
+  width: 100%;
+}
+
+.esports__contenedor {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 1400px;
+}
+
+.titulo-sports {
+  padding-top: 20px;
+  color: rgb(82, 79, 79);
+  padding-left: 20px;
+}
+
+.semititle-sports {
+  color: rgb(82, 79, 79);
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+article section .col-xs-12, article section .col-sm-12, article section .col-md-3, article section .col-lg-3 {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.portada {
+  max-height: 495px;
+  width: 100%;
+}
+
+.cabezal-esport {
+  padding-top: 10px;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.466);
+  padding: 10px;
+}
+
+.minicontent h3 {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.466);
+  padding: 5px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.col {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.row {
+  padding-right: 0px;
+}
+
+.col-lg-3, .col-md-5, .col-sm-12 {
+  width: 100%;
+  max-width: none;
+}
+
+.semititle-sport:after {
+  border-bottom: 1px solid #C51111;
+  content: "";
+  display: block;
+  position: relative;
+  width: auto;
 }
 
 @media only screen and (max-width: 767px) {
@@ -623,7 +702,7 @@ main .card {
   }
   .articulo {
     background-image: none;
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 25px;
   }
   .articulo_mh {
@@ -737,12 +816,12 @@ main .card {
     left: 0%;
   }
   /* Noticias */
-  .noticias {
+  .noticias, .e-sport {
     background-image: none;
     padding-top: 60px;
     padding-bottom: 0px;
   }
-  .noticias__contenedor {
+  .noticias__contenedor, .esports__contenedor {
     width: 100%;
     height: auto;
   }
@@ -750,45 +829,46 @@ main .card {
     display: flex;
     flex-wrap: wrap;
   }
-  .noti {
+  .noti, .sport {
     padding-top: 50px;
     padding-left: 0px;
+    padding-bottom: 0px;
   }
-  .noti__contenedor {
+  .noti__contenedor, .sport__contenedor {
     background-color: white;
     width: 100%;
     height: auto;
     padding-bottom: 50px;
     box-shadow: none;
   }
-  .title-noti {
+  .title-noti, .title-sport {
     font-size: 35px;
   }
-  .cabezal-noti {
+  .cabezal-noti, .cabezal-sport {
     width: 100%;
     padding-left: 0px;
     padding-right: 0px;
   }
-  .post-noti {
+  .post-noti, .post-sport {
     width: 100%;
     padding-left: 0px;
     padding-right: 0px;
   }
-  .semititle-noti {
+  .semititle-noti, .titulo-sports, .semititle-sports, .semititle-sport {
     padding-left: 30px;
     padding-right: 20px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-  .tweet-noti {
+  .tweet-noti, .tweet-sport {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .text-noti {
+  .text-noti, .text-sport {
     font-size: 15px;
     padding-left: 30px;
     padding-right: 30px;
   }
-  .semititle-noti {
+  .semititle-noti, .titulo-sports, .semititle-sports, .semititle-sport {
     font-size: 20px;
   }
   /* Juegos */
@@ -833,6 +913,25 @@ main .card {
   .plat {
     padding: 3px;
   }
+  .esports__contenedor {
+    height: 2300px;
+  }
+  .col-lg-3, .col-md-5, .col-sm-12 {
+    width: 100%;
+    max-width: none;
+  }
+  .content {
+    padding: 0px;
+  }
+  .content h3 {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .semititle-sports {
+    padding-left: 0px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar {
@@ -841,7 +940,7 @@ main .card {
   .navbar-nav {
     margin-left: auto;
   }
-  .articulo {
+  .articulo, .articulo_mh, .articulo_baa, .articulo_twd, .articulo_elr, .articulo_sfv, .articulo_cuphead, .articulo_mw2, .articulo_ulof {
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -881,46 +980,6 @@ main .card {
     margin: 0 auto;
     margin-left: 0px;
   }
-  .articulo_mh {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_baa {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_twd {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_elr {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_sfv {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_cuphead {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_mw2 {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_ulof {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
   .articulo_jg__contenedor {
     width: 100%;
     height: auto;
@@ -956,7 +1015,7 @@ main .card {
     left: 25%;
   }
   /* Noticias */
-  .noticias__contenedor {
+  .noticias__contenedor, .esports__contenedor {
     width: 100%;
     height: 1440px;
   }
@@ -964,43 +1023,43 @@ main .card {
     width: 100%;
     height: auto;
   }
-  .noti {
+  .noti, .sport {
     padding-top: 140px;
     padding-left: 0px;
   }
-  .noti__contenedor {
+  .noti__contenedor, .sport__contenedor {
     background-color: white;
     width: 100%;
     height: auto;
     padding-bottom: 50px;
     box-shadow: none;
   }
-  .title-noti {
+  .title-noti, .title-sport {
     font-size: 35px;
   }
-  .cabezal-noti {
+  .cabezal-noti, .cabezal-sport {
     width: 100%;
     margin-left: 0px;
   }
-  .post-noti {
+  .post-noti, .post-sport {
     width: 100%;
     margin-left: 0px;
   }
-  .semititle-noti {
+  .semititle-noti, .titulo-sports, .semititle-sports, .semititle-sport {
     padding-left: 40px;
     padding-right: 20px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-  .tweet-noti {
+  .tweet-noti, .tweet-sport {
     padding-left: 100px;
     padding-right: 100px;
   }
-  .text-noti {
+  .text-noti, .text-sport {
     font-size: 17px;
     padding-left: 30px;
     padding-right: 30px;
   }
-  .semititle-noti {
+  .semititle-noti, .titulo-sports, .semititle-sports, .semititle-sport {
     font-size: 30px;
   }
   .info-juegos {
@@ -1019,6 +1078,24 @@ main .card {
   .plat {
     padding: 5px;
   }
+  .col-lg-3, .col-md-5, .col-sm-12 {
+    width: 100%;
+    max-width: none;
+  }
+  .esports__contenedor {
+    height: 1320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .portada {
+    min-height: 495px;
+  }
+  .minicontent h3 {
+    font-size: 15px;
+  }
+  .semititle-sports {
+    padding-left: 0px;
+  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1143px) {
   .navbar {
@@ -1027,7 +1104,7 @@ main .card {
   .navbar-nav {
     margin-left: auto;
   }
-  .articulo {
+  .articulo, .articulo_mh, .articulo_baa, .articulo_twd, .articulo_elr, .articulo_sfv, .articulo_cuphead, .articulo_mw2, .articulo_ulof {
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -1039,45 +1116,6 @@ main .card {
     margin-top: 15px;
     padding-left: 25px;
     padding-right: 25px;
-  }
-  .articulo_mh {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_baa {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_twd {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_elr {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_sfv {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_cuphead {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_mw2 {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_ulof {
-    background-size: cover;
-    background-position: center;
   }
   .articulo_jg__contenedor {
     width: 100%;
@@ -1107,35 +1145,35 @@ main .card {
     width: 100%;
   }
   /* Noticias */
-  .noticias__contenedor {
+  .noticias__contenedor, .esports__contenedor {
     width: 100%;
     height: 1600px;
   }
-  .noti {
+  .noti, .sport {
     padding-top: 150px;
     padding-left: 100px;
     padding-right: 100px;
   }
-  .noti__contenedor {
+  .noti__contenedor, .sport__contenedor {
     background-color: white;
     width: 100%;
     height: auto;
     padding-bottom: 50px;
     box-shadow: none;
   }
-  .cabezal-noti {
+  .cabezal-noti, .cabezal-sport {
     margin-left: 0px;
     padding-right: 60px;
     padding-left: 60px;
     width: 100%;
   }
-  .post-noti {
+  .post-noti, .post-sport {
     margin-left: 0px;
     padding-left: 100px;
     padding-right: 100px;
     width: 100%;
   }
-  .tweet-noti {
+  .tweet-noti, .tweet-sport {
     padding-left: 150px;
     padding-right: 150px;
   }
@@ -1168,44 +1206,19 @@ main .card {
   .plat {
     padding: 5px;
   }
+  .esports__contenedor {
+    height: 1350px;
+  }
+  .col-lg-3, .col-md-5, .col-sm-12 {
+    width: 100%;
+    max-width: none;
+  }
 }
 @media only screen and (min-width: 1144px) and (max-width: 1911px) {
   .navbar-nav {
     margin-left: auto;
   }
-  .articulo {
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_mh {
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_baa {
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_twd {
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_elr {
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_sfv {
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_cuphead {
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_mw2 {
-    background-size: cover;
-    background-position: center;
-  }
-  .articulo_ulof {
+  .articulo, .articulo_mh, .articulo_baa, .articulo_twd, .articulo_elr, .articulo_sfv, .articulo_cuphead, .articulo_mw2, .articulo_ulof {
     background-size: cover;
     background-position: center;
   }
@@ -1224,34 +1237,38 @@ main .card {
   .plat {
     padding: 5px;
   }
-  .noti {
+  .noti, .sport {
     padding-top: 150px;
     padding-left: 100px;
     padding-right: 100px;
   }
-  .noti__contenedor {
+  .noti__contenedor, .sport__contenedor {
     background-color: white;
     width: 100%;
     height: auto;
     padding-bottom: 50px;
     box-shadow: none;
   }
-  .cabezal-noti {
+  .cabezal-noti, .cabezal-sport {
     margin-left: 0px;
     padding-right: 60px;
     padding-left: 60px;
     margin-bottom: 20px;
     width: 100%;
   }
-  .post-noti {
+  .post-noti, .post-sport {
     margin-left: 0px;
     padding-left: 150px;
     padding-right: 150px;
     width: 100%;
     margin-bottom: 20px;
   }
-  .tweet-noti {
+  .tweet-noti, .tweet-sport {
     padding-left: 300px;
     padding-right: 300px;
+  }
+  .col-lg-3, .col-md-5, .col-sm-12 {
+    width: 100%;
+    max-width: none;
   }
 }/*# sourceMappingURL=style.css.map */
