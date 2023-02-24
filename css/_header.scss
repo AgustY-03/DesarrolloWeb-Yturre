@@ -1,0 +1,45 @@
+nav{
+    width: 100%;
+    float: right;
+}
+
+.navbar{
+    background-color: rgb(207, 109, 64);
+    position: fixed;
+    z-index: 2;
+
+    & a{
+        color: white;
+    }
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+.navbar-toggler{
+    color: white;
+    background-color: orangered;
+    padding-top: 11px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.navbar-nav{
+    margin-left: auto;
+
+    & li{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.nav-item{
+    margin-right: 40px;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    & :hover{
+        background-color: pink;
+    }
+}

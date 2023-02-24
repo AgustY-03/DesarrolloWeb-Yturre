@@ -1,3 +1,9 @@
+// import //
+
+@import "_grids.scss";
+@import "_header.scss";
+@import "_mixin.scss";
+
 *{
     margin: 0;
     padding: 0;
@@ -11,60 +17,9 @@ body{
     line-height: 1;
 }
 
-nav{
-    width: 100%;
-    float: right;
-}
-
-.navbar{
-    background-color: rgb(207, 109, 64);
-    position: fixed;
-    z-index: 2;
-
-    & a{
-        color: white;
-    }
-}
-
-.navbar-brand{
-    font-weight: bold;
-}
-
-.navbar-toggler{
-    color: white;
-    background-color: orangered;
-    padding-top: 11px;
-    font-size: 20px;
-    border-radius: 10px;
-}
-
-.navbar-nav{
-    margin-left: auto;
-
-    & li{
-        display: flex;
-        justify-content: space-evenly;
-    }
-}
-
-.nav-item{
-    margin-right: 40px;
-    padding: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    & :hover{
-        background-color: pink;
-    }
-}
-
 .articulo{
-    height: auto;
-    width: 100%;
+    @include background_review;
     background-image: url(../img/fondo/fondo-inicio.jpg);
-    background-attachment: fixed;
-    position: static;
-    padding-top: 200px;
-    padding-bottom: 100px;
 }
 
 article{
@@ -80,7 +35,7 @@ article{
     margin: 0 auto;
     padding-left: 40px;
 
-    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    @include shadow;
 
     & ul{
         & li{
@@ -205,91 +160,43 @@ footer{
 // Reviews // 
 
 .articulo_mh{
-    height: auto;
-    width: 100%;
+    @include background_review;
     background-image: url(../img/fondo/infierno.jpg);
-    position: static;
-    background-attachment: fixed;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background-repeat: no-repeat;
 }
 
 .articulo_baa{
-    height: auto;
-    width: 100%;
+    @include background_review;
     background-image: url(../img/fondo/batman.jpg);
-    position: static;
-    background-attachment: fixed;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background-repeat: no-repeat;
 }
 
 .articulo_twd{
-    height: auto;
-    width: 100%;
+    @include background_review;
     background-image: url(../img/fondo/twd-fondo.jpg);
-    position: static;
-    background-attachment: fixed;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background-repeat: no-repeat;
 }
 
 .articulo_elr{
-    height: auto;
-    width: 100%;
+    @include background_review;
     background-image: url(../img/fondo/elr-fondo.jpg);
-    position: static;
-    background-attachment: fixed;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background-repeat: no-repeat;
 }
 
 .articulo_sfv{
-    height: auto;
-    width: 100%;
+    @include background_review;
     background-image: url(../img/fondo/sfv-fondo.jpg);
-    position: static;
-    background-attachment: fixed;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background-repeat: no-repeat;
 }
 
 .articulo_cuphead{
-    height: auto;
-    width: 100%;
+    @include background_review;
     background-image: url(../img/fondo/cuphead-fondo.jpg);
-    position: static;
-    background-attachment: fixed;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background-repeat: no-repeat;
 }
 
 .articulo_mw2{
-    height: auto;
-    width: 100%;
+    @include background_review;
     background-image: url(../img/fondo/mw2-fondo.jpg);
-    position: static;
-    background-attachment: fixed;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background-repeat: no-repeat;
 }
 
 .articulo_ulof{
-    height: auto;
-    width: 100%;
+    @include background_review;
     background-image: url(../img/fondo/uncharted-fondo.jpg);
-    position: static;
-    background-attachment: fixed;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background-repeat: no-repeat;
 }
 
 .articulo_jg__contenedor{
@@ -300,7 +207,7 @@ footer{
     overflow: auto;
     margin: 0 auto;
 
-    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    @include shadow;
 
     & p{
         padding-left: 50px;
@@ -356,11 +263,11 @@ iframe{
     overflow: auto;
     margin: 0 auto;
 
-    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    @include shadow;
 }
 
 .sombra{
-    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    @include shadow;
 }
 
 h3{
@@ -378,14 +285,6 @@ article{
                 padding-left: 0px;
             }
         }
-    }
-}
-
-section{
-    & .col-12{
-        margin-left: 0px;
-        padding-right: 0px;
-        padding-left: 0px;
     }
 }
 
@@ -433,14 +332,8 @@ section{
 
 .jumbotron{
     margin-bottom: 0rem;
-    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    @include shadow;
     border-radius: 10px;
-}
-
-div{
-    & .col-12{
-        padding-right: 0px;
-    }
 }
 
 .detalle{
@@ -513,19 +406,15 @@ main .card{
     padding-left: 40px;
     padding-right: 40px;
 
-    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    @include shadow;
 }
 
 .textos {
-	height: 100%;
+	height: auto;
     text-decoration: none;
     position: static;
     color: black;
     margin-bottom: 10px;
-}
-
-.col-9, .col-3, .col-12, .col-4, .col-2, .col-8{
-    position: static;
 }
 
 .img-fluid{
@@ -537,6 +426,7 @@ main .card{
 }
 
 .vermas2{
+    margin-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -551,14 +441,6 @@ main .card{
         padding: 10px 30px;
         border-radius: 5px;
     }
-}
-
-.col-xs-2, .col-sm-3, .col-md-2{
-    position: static;
-}
-
-.col-xs-8, .col-sm-8{
-    position: static;
 }
 
 .carousel-caption{
@@ -586,7 +468,7 @@ main .card{
     height: auto;
     padding-bottom: 50px;
 
-    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    @include shadow;
 }
 
 .title-noti{
@@ -678,15 +560,6 @@ main .card{
     padding-left: 20px;
 }
 
-article{
-    & section{
-        .col-xs-12, .col-sm-12, .col-md-3, .col-lg-3{
-            padding-left: 10px;
-            padding-right: 0px;
-        }
-    }
-}
-
 .portada{
     max-height: 495px;
     width: 100%;
@@ -716,21 +589,6 @@ article{
     margin-left: 0px;
     margin-bottom: 0px;
     }
-}
-
-.col{
-    padding-right: 0px;
-    padding-left: 0px;
-}
-
-.row{
-
-    padding-right: 0px;
-}
-
-.col-lg-3, .col-md-5, .col-sm-12{
-    width: 100%;
-    max-width: none;
 }
 
 // sport //
@@ -779,12 +637,6 @@ article{
     @extend .post-noti;
 }
 
-
-@mixin background{
-    background-size: cover;
-    background-position: center;
-}
-
 // Media // 
 
 @media only screen and (max-width: 767px){
@@ -813,7 +665,7 @@ article{
     .articulo{
         background-image: none;
         padding-top: 60px;
-        padding-bottom: 25px;
+        padding-bottom: 0px;
     }
 
     .articulo_mh{
@@ -935,6 +787,10 @@ article{
         margin: 0 auto;
         width: 100%;
         height: 280px;
+    }
+
+    .vermas{
+        margin-bottom: 20px;
     }
 
     /* Reporte/Contacto */
@@ -1084,7 +940,7 @@ article{
     // E-Sports //
 
     .esports__contenedor{
-        height: 2300px;
+        height: auto;
     }
 
     .col-lg-3, .col-md-5, .col-sm-12{

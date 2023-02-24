@@ -1,0 +1,49 @@
+section{
+    & .col-12{
+        margin-left: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+div{
+    & .col-12{
+        padding-right: 0px;
+    }
+}
+
+.col-9, .col-3, .col-12, .col-4, .col-2, .col-8{
+    position: static;
+}
+
+.col-xs-2, .col-sm-3, .col-md-2{
+    position: static;
+}
+
+.col-xs-8, .col-sm-8{
+    position: static;
+}
+
+article{
+    & section{
+        .col-xs-12, .col-sm-12, .col-md-3, .col-lg-3{
+            padding-left: 10px;
+            padding-right: 0px;
+        }
+    }
+}
+
+.col{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.row{
+
+    padding-right: 0px;
+}
+
+.col-lg-3, .col-md-5, .col-sm-12{
+    width: 100%;
+    max-width: none;
+}
